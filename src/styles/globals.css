@@ -1,0 +1,73 @@
+@import 'blocks.css/dist/blocks.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
+
+/* styles/globals.css */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.text-editor {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+/* Add any additional global styles as needed */
+
+.ql-toolbar button {
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0.25rem;
+  background: transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.ql-toolbar button:hover {
+  border-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.ql-toolbar button:focus,
+.ql-toolbar button.ql-active {
+  border-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
